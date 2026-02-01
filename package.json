@@ -1,0 +1,20 @@
+{
+  "name": "bakery-management-system",
+  "version": "1.0.0",
+  "description": "Complete bakery management system with customer, baker, delivery boy, and admin modules",
+  "main": "server/index.js",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["bakery", "management", "system", "react", "nodejs", "mongodb"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
